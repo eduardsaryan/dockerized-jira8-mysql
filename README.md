@@ -2,8 +2,8 @@
 <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/eduardevops/jira8.3-mariadb.svg" style="max-width:100%;"> <img alt="MicroBadger Size" src="https://img.shields.io/microbadger/image-size/eduardevops/jira8.3-mariadb/latest.svg" style="max-width:100%;">
 -----
 
-
 ![Logo](./assets/logo.jpg)
+
 ------
 
 # INFO!!!
@@ -20,7 +20,7 @@ Before you can use this repo make sure you have [Docker](https://www.docker.com/
 
 ## Versions
 *	JIRA v8.3.0
-*	MariaDB v10.4.6
+*	MySQL v5.7
 
 -----
 ## NGINX

@@ -1,4 +1,5 @@
-<!-- ## Dockerized JIRA v8.2 and MariaDB v10.4 -->
+<!-- ## Dockerized JIRA v8.3 and MySQL v5.7 -->
+
 <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/eduardevops/jira8.3-mysql.svg" style="max-width:100%;"> <img alt="MicroBadger Size" src="https://img.shields.io/microbadger/image-size/eduardevops/jira8.3-mysql/latest.svg" style="max-width:100%;">
 -----
 
@@ -20,7 +21,7 @@ Before you can use this repo make sure you have [Docker](https://www.docker.com/
 
 ## Versions
 *	JIRA v8.3.0
-*	MySQL v5.7
+*	MySQL v5.7.27
 
 -----
 ## NGINX
@@ -81,7 +82,7 @@ All names and parameters can be, and in most cases should be edited.
 #### Run
 Clone repo to your server (I would suggest use /opt directory)
 ```bash
-sudo git clone https://github.com/eduardevops/dockerized-jira8.2-mariadb.git
+sudo git clone https://github.com/eduardevops/dockerized-jira8.3-mysql.git
 ```
 
 Make sure your user is a member of Docker group
@@ -90,7 +91,7 @@ usermod -aG docker <username>
 ```
 Navigate to the project folder
 ```sh
-cd /path/to/dockerized-jira8.2-mariadb
+cd /path/to/dockerized-jira8.3-mysql
 ```
 Make ```bash docker-entrypoint.sh ``` file executable for others and run the composer
 ```sh
@@ -98,15 +99,10 @@ chmod o+x docker-entrypoint.sh
 docker-compose up -d
 ```
 
-#### Animation
-![Animation](./assets/docker-compose-up.gif)
-
 ------
 Check logs in real-time
 ```sh
 docker-compose logs -f
 ```
 
-#### Animation
-![Animation](./assets/docker-compose-logs.gif)
 -----

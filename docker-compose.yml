@@ -18,8 +18,8 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: Dockerfile-MYSQL
-      container_name: jira-db
+      dockerfile: Dockerfile-MySQL
+    container_name: jira-db
     #ports:
       #- 3306:3306
     env_file:

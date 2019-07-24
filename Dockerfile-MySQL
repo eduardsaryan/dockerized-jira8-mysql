@@ -3,7 +3,7 @@ FROM mysql:5.7
 RUN     mkdir -p /etc/certs
 
 COPY    certs/*.pem /etc/certs/
-Run     chmod 
+Run     chmod 664 v1.0.0/etc/cert/*key*
 COPY    my.cnf /etc/mysql/mysql.conf.d/mysqld.cnf
 
 VOLUME /var/lib/mysql

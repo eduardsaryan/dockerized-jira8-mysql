@@ -43,8 +43,6 @@ WORKDIR /var/atlassian/jira
 COPY "docker-entrypoint.sh" "/"
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
-COPY ./conf/dbconfig.xml   /var/atlassian/jira/
-
 # Copy and import MySQL client certificates
 RUN     mkdir -p /etc/certs
 COPY    certs/client-cert.pem /etc/certs/

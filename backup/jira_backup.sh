@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # Cron jobs
-#*/3 * * * *    /bin/bash /opt/scripts/db_backup.sh >> /var/log/db_cron.log
-#*/5 * * * *    /bin/bash  /opt/scripts/jira_backup.sh >> /var/log/jira_cron.log
+# * * * * *    /bin/bash jira8.2-mariadb/backup/jira_backup.sh >> /var/log/db_backup-cron.log
+# # If you do not have a clear understanding how to configure date in crontab or you just feel too lazy to do so, use https://crontab.guru
+# Very useful project
 
 # Get current date
 now=$(date +"%d.%b.%Y"-"%H:%M")
@@ -10,4 +11,4 @@ now=$(date +"%d.%b.%Y"-"%H:%M")
 # Backup exported files
 docker cp jira-web:/var/atlassian/jira/export/. /backup/jira-exported/
 # Delete files older than 3 days
-find /backup/jira/ -type f -iname '*.zip' -mtime +3 -exec rm {} \;
+find /backup/jira/ -type f -iname '*.zip' -mtime +2 -exec rm {} \;

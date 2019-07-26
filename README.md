@@ -11,10 +11,10 @@
 ####  Still working on this. All necessary comments will be provided at the very end
 ####  Don't use this
 
-This is a fork of  ![This Project](https://github.com/cptactionhank/docker-atlassian-jira)
+This is a fork of  ![This Project](https://github.com/cptactionhank/docker-atlassian-jira) <br>
 ![Martin Aksel Jensen](https://github.com/cptactionhank) did a great job
 
-##### If you want to use JIRA with MariaDB use the following project.
+##### If you want to use JIRA with MariaDB use the following project. <br>
 ![JIRA with MariaDB](https://github.com/eduardevops/dockerized-jira8.3-mariadb)
 
 ------

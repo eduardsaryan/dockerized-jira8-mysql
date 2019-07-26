@@ -151,7 +151,7 @@ Or
 ```sql
 STATUS;
 ```
-![Show](./assets/status.jpg)
+![Status](./assets/status.jpg)
 
 -----
 

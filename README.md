@@ -106,3 +106,13 @@ docker-compose logs -f
 ```
 
 -----
+#### Check SSL
+
+###### If you want to make sure that SSL is enabled for MySQL
+You can use one of 2 options
+1.  Get inside the container
+    ```bash
+    docker container exec -it jira-db bash
+    ```
+
+-----

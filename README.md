@@ -108,11 +108,32 @@ docker-compose logs -f
 -----
 #### Check SSL
 
-###### If you want to make sure that SSL is enabled for MySQL
+##### If you want to make sure that SSL is enabled for MySQL
 You can use one of 2 options
 1.  Get inside the container
     ```bash
     docker container exec -it jira-db bash
     ```
+    Connect to MySQL
+    ```bash
+    mysql -u root -p
+    ```
+    Use the password you set earlier on .env.db file
+
+2.  Uncomment 'ports' section in 'docker-compose.yml' file
+    Example
+    ```yaml
+    ...
+    ports:
+      - 33060:3306
+    ...
+    ```
+Once connected to MySQL console, run
+```sql
+USE jira_db;
+SELECT @@character_set_database, @@collation_database;
+```
+![Show](./assets/show.jpg)
+
 
 -----

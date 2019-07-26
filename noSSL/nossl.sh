@@ -6,5 +6,5 @@ cp -f my.cnf ../conf/
 
 # Remove unnecessary files
 rm -rf ../certs
-rm -f  ../getcert.sh
+rm -f  ../gencerts.sh
 rm -f  ../Dockerfile-MySQL

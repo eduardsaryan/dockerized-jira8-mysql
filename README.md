@@ -49,6 +49,7 @@ Depending on your server sepcs JIRA configuration (and its work in general) can 
 .
 ├── .env.db
 ├── .env.jira
+├── .env.certs
 ├── Dockerfile
 ├── assets
 │   └── logo.jpg
@@ -84,7 +85,7 @@ All names and parameters can be, and in most cases should be edited.
 -----
 
 #### Run
-Clone repo to your server (I would suggest use /opt directory)
+Clone repo to your server (I would suggest to use /opt directory)
 ```bash
 sudo git clone https://github.com/eduardevops/dockerized-jira8.3-mysql.git
 ```
@@ -131,18 +132,26 @@ You can use one of 2 options
       - 33060:3306
     ...
     ```
+    Connect to MySQL server
+    ```bash
+    mysql -v -h 127.0.0.1 --port=33060 -u root -p \
+    --ssl-ca=certs/ca.pem \
+    --ssl-cert=certs/client-cert.pem \
+    --ssl-key=certs/client-key.pem
+    ```
+
 Once connected to MySQL console, run
 ```sql
 USE jira_db;
-SELECT @@character_set_database, @@collation_database;
+SHOW VARIABLES LIKE '%ssl%';
 ```
-![Show](./assets/Show.jpg)
+![Show](./assets/show.jpg)
 
 Or
 ```sql
 STATUS;
 ```
-![Show](./assets/Status.jpg)
+![Show](./assets/status.jpg)
 
 -----
 

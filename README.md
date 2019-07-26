@@ -47,23 +47,44 @@ Depending on your server sepcs JIRA configuration (and its work in general) can 
 
 ```bash
 .
-├── .env.db
-├── .env.jira
-├── .env.certs
-├── Dockerfile
 ├── assets
-│   └── logo.jpg
+│   ├── logo.jpg
+│   ├── show.jpg
+│   └── status.jpg
 ├── backup
 │   ├── db_backup.sh
 │   ├── db_restore.sh
 │   └── jira_backup.sh
+├── certs
+│   ├── ca-key.pem
+│   ├── ca.pem
+│   ├── client-cert.pem
+│   ├── client-key.pem
+│   ├── client-req.pem
+│   ├── server-cert.pem
+│   ├── server-key.pem
+│   └── server-req.pem
 ├── conf
 │   ├── apache-reverse-proxy.conf
 │   ├── httpd.conf
+│   ├── my.cnf
 │   └── nginx-reverse-proxy.conf
 ├── docker-compose-alter.yml
 ├── docker-compose.yml
-└── docker-entrypoint.sh
+├── docker-entrypoint.sh
+├── Dockerfile
+├── Dockerfile-MySQL
+├── .env.certs
+├── .env.db
+├── .env.jira
+├── gencerts.sh
+└── noSSL
+    ├── docker-compose-alter.yml
+    ├── docker-compose.yml
+    ├── Dockerfile
+    ├── my.cnf
+    └── nossl.sh
+
 ```
 
 ### Description

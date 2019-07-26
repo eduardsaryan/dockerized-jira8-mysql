@@ -11,10 +11,11 @@
 ####  Still working on this. All necessary comments will be provided at the very end
 ####  Don't use this
 
-This is a work of  ![This Project](https://github.com/cptactionhank/docker-atlassian-jira)
-
+This is a fork of  ![This Project](https://github.com/cptactionhank/docker-atlassian-jira)
 ![Martin Aksel Jensen](https://github.com/cptactionhank) did a great job
 
+if you want to use JIRA with MariaDB use the following project.
+![JIRA with MariaDB](https://github.com/eduardevops/dockerized-jira8.3-mariadb)
 ------
 ## First things first
 Before you can use this repo make sure you have [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/install/) installed

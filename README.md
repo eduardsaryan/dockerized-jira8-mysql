@@ -145,3 +145,8 @@ STATUS;
 ![Show](./assets/Status.jpg)
 
 -----
+#### noSSL
+If for any reason you want to use MySQL without SSL you need to use files from noSSL folder
+Maybe I am to lazy, but I find it very complicated to describe of changes necessary in order to
+switch from default SSL mode to noSSL. So simple run nossl.sh
+It will replace files from project with ones from noSSL folder so you can run JIRA+MySQL without SSL

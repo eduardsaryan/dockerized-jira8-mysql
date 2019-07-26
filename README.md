@@ -133,7 +133,11 @@ Once connected to MySQL console, run
 USE jira_db;
 SELECT @@character_set_database, @@collation_database;
 ```
-![Show](./assets/show.jpg)
+![Show](./assets/Show.jpg)
 
-
+Or
+```sql
+STATUS;
+```
+![Show](./assets/Status.jpg)
 -----

@@ -100,12 +100,10 @@ chmod o+x docker-entrypoint.sh
 docker-compose up -d
 ```
 
-------
 Check logs in real-time
 ```sh
 docker-compose logs -f
 ```
-
 
 -----
 #### Check SSL

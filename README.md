@@ -78,6 +78,7 @@ docker-compose.yml  | Main file of the project that builds and links containers
 #### ToDo
 All names and parameters can be, and in most cases should be edited.
 
+-----
 
 #### Run
 Clone repo to your server (I would suggest use /opt directory)
@@ -104,6 +105,7 @@ Check logs in real-time
 ```sh
 docker-compose logs -f
 ```
+
 
 -----
 #### Check SSL
@@ -140,4 +142,5 @@ Or
 STATUS;
 ```
 ![Show](./assets/Status.jpg)
+
 -----

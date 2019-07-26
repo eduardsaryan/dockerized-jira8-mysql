@@ -145,7 +145,8 @@ STATUS;
 ![Show](./assets/Status.jpg)
 
 -----
-#### noSSL
+
+### noSSL
 If for any reason you want to use MySQL without SSL you need to use files from noSSL folder
 Maybe I am to lazy, but I find it very complicated to describe of changes necessary in order to
 switch from default SSL mode to noSSL. So simple run nossl.sh

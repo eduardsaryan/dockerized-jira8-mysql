@@ -28,7 +28,6 @@ RUN set -x \
     && echo -e                 "\njira.home=$JIRA_HOME" >> "${JIRA_INSTALL}/atlassian-jira/WEB-INF/classes/jira-application.properties" \
     && touch -d "@0"           "${JIRA_INSTALL}/conf/server.xml"
 
-# here we only ever run one process anyway.
 #USER daemon:daemon
 
 # Expose default HTTP connector port.

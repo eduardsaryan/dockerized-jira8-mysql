@@ -12,7 +12,7 @@ services:
     mem_reservation: 1024m
     memswap_limit: 2048m
      environment:
-       CATALINA_OPTS: -Xms2g -Xmx4g
+       CATALINA_OPTS: -Xms2048m -Xmx4096m -Datlassian.plugins.enable.wait=300
        X_PROXY_NAME: domain.com
        X_PROXY_SCHEME: https
        X_PROXY_PORT: 443
@@ -36,7 +36,7 @@ services:
        MYSQL_PASSWORD: password
     volumes:
         - db:/var/lib/mysql
-    command: ['mysqld', '--character-set-server=utf8', '--collation-server=utf8_bin']
+    command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_bin']
 volumes:
     web:
     db:

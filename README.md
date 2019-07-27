@@ -49,41 +49,22 @@ Depending on your server sepcs JIRA configuration (and its work in general) can 
 .
 ├── assets
 │   ├── logo.jpg
-│   ├── show.jpg
-│   └── status.jpg
 ├── backup
 │   ├── db_backup.sh
 │   ├── db_restore.sh
 │   └── jira_backup.sh
-├── certs
-│   ├── ca-key.pem
-│   ├── ca.pem
-│   ├── client-cert.pem
-│   ├── client-key.pem
-│   ├── client-req.pem
-│   ├── server-cert.pem
-│   ├── server-key.pem
-│   └── server-req.pem
 ├── conf
 │   ├── apache-reverse-proxy.conf
 │   ├── httpd.conf
-│   ├── my.cnf
 │   └── nginx-reverse-proxy.conf
 ├── docker-compose-alter.yml
 ├── docker-compose.yml
 ├── docker-entrypoint.sh
 ├── Dockerfile
-├── Dockerfile-MySQL
-├── .env.certs
 ├── .env.db
 ├── .env.jira
 ├── gencerts.sh
-└── noSSL
-    ├── docker-compose-alter.yml
-    ├── docker-compose.yml
-    ├── Dockerfile
-    ├── my.cnf
-    └── nossl.sh
+
 
 ```
 
@@ -131,53 +112,3 @@ docker-compose logs -f
 ```
 
 -----
-#### Check SSL
-
-##### If you want to make sure that SSL is enabled for MySQL
-You can use one of 2 options
-1.  Get inside the container
-    ```bash
-    docker container exec -it jira-db bash
-    ```
-    Connect to MySQL
-    ```bash
-    mysql -u root -p
-    ```
-    Use the password you set earlier on .env.db file
-
-2.  Uncomment 'ports' section in 'docker-compose.yml' file
-    Example
-    ```yaml
-    ...
-    ports:
-      - 33060:3306
-    ...
-    ```
-    Connect to MySQL server
-    ```bash
-    mysql -v -h 127.0.0.1 --port=33060 -u root -p \
-    --ssl-ca=certs/ca.pem \
-    --ssl-cert=certs/client-cert.pem \
-    --ssl-key=certs/client-key.pem
-    ```
-
-Once connected to MySQL console, run
-```sql
-USE jira_db;
-SHOW VARIABLES LIKE '%ssl%';
-```
-![Show](./assets/show.jpg)
-
-Or
-```sql
-STATUS;
-```
-![Status](./assets/status.jpg)
-
------
-
-### noSSL
-If for any reason you want to use MySQL without SSL you need to use files from noSSL folder
-Maybe I am to lazy, but I find it very complicated to describe of changes necessary in order to
-switch from default SSL mode to noSSL. So simple run nossl.sh
-It will replace files from project with ones from noSSL folder so you can run JIRA+MySQL without SSL

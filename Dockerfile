@@ -42,10 +42,6 @@ WORKDIR /var/atlassian/jira
 COPY "docker-entrypoint.sh" "/"
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
-# Copy and import MySQL client certificates
-RUN     mkdir -p /etc/certs
-COPY    certs/client-cert.pem /etc/certs/
-RUN     keytool -storepass password -import -alias mysqlssl -noprompt -file /etc/certs/client-cert.pem
 
 # Run Atlassian JIRA as a foreground process by default.
 CMD ["/opt/atlassian/jira/bin/start-jira.sh", "-fg"]

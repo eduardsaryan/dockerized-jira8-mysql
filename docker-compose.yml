@@ -16,9 +16,7 @@ services:
       - jira-db
   jira-db:
     restart: always
-    build:
-      context: .
-      dockerfile: Dockerfile-MySQL
+    image: mysql:5.7
     container_name: jira-db
     #ports:
       #- 3306:3306

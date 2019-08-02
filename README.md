@@ -8,7 +8,7 @@ This is a fork of  ![This Project](https://github.com/cptactionhank/docker-atlas
 If you want to use JIRA with PostgreSQL, you may want to use his project <br>
 ![Martin Aksel Jensen](https://github.com/cptactionhank) did a great job.
 
-If you want to use JIRA with MariaDB use the following project. <br>
+If you want to use JIRA with MariaDB use the following project.
 ![JIRA with MariaDB](https://github.com/eduardevops/dockerized-jira8.3-mariadb)
 
 ------

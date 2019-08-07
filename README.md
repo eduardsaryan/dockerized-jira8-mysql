@@ -13,24 +13,18 @@ If you want to use JIRA with MariaDB use the following project.
 ##### Components Versions
 *	JIRA v8.3.1
 *	MySQL 5.7.27
-
 -----
-
 #### First things first
 Before you can use this repo make sure you have [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/install/) installed
 
 #### ToDo
 All names and parameters can be, and in most cases, should be edited.
 
-
-##### Timeout
+#### Timeout
 Depending on your server sepcs JIRA configuration (and its work in general) can be very slow, which can cause timeout issue with your web server or even with JIRA without reverse proxy (e.g. error 504, nginx).
 To avoid it make sure to increase timeout settings in your webserver
-
 ------
-
 #### Content Tree
-
 ```less
 ├── .env.db
 ├── .env.jira

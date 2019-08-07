@@ -23,11 +23,11 @@ Before you can use this repo make sure you have [Docker](https://www.docker.com/
 All names and parameters can be, and in most cases, should be edited.
 
 
-##### NGINX
+##### Timeout 
 Depending on your server sepcs JIRA configuration (and its work in general) can be very slow, which can cause nginx to stop working with error 504. To avoid this add proxy timeout settings to your nginx.conf or increase value of proxy_read_timeout in your reverse proxy setting. You can add below lines
 into /etc/nginx/nginx.conf
 
-##### NGINX Timeout examples
+##### Nginx Timeout examples
 ```less
   proxy_connect_timeout       600;
   proxy_send_timeout          600;

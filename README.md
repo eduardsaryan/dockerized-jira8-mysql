@@ -23,6 +23,7 @@ All names and parameters can be, and in most cases, should be edited.
 ##### Timeout
 Depending on your server sepcs JIRA configuration (and its work in general) can be very slow, which can cause timeout issue with your web server or even with JIRA without reverse proxy (e.g. error 504, nginx).
 To avoid it make sure to increase timeout settings in your webserver
+
 ------
 #### Content Tree
 ```less

@@ -5,6 +5,7 @@ ENV JIRA_HOME     /var/atlassian/jira
 ENV JIRA_INSTALL  /opt/atlassian/jira
 ENV JIRA_VERSION  8.3.1
 ENV MYSQL_CONNECTOR 5.1.47
+
 # Install Atlassian JIRA and helper tools and setup initial home
 RUN set -x \
     && apk add --no-cache curl xmlstarlet bash ttf-dejavu libc6-compat \

@@ -1,16 +1,20 @@
 <!-- ## Dockerized JIRA v8.3 and MySQL v5.7 -->
 
 <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/eduardevops/jira8.3-mysql.svg" style="max-width:100%;"> <img alt="MicroBadger Size" src="https://img.shields.io/microbadger/image-size/eduardevops/jira8.3-mysql/latest.svg" style="max-width:100%;">
-----
+-----
 ![Logo](./assets/logo.jpg)
-----
+
+##### Components Versions
+*	JIRA v8.3.1
+*	MySQL 5.7.27
+-----
 
 This is a fork of  ![This Project](https://github.com/cptactionhank/docker-atlassian-jira). <br>
 If you want to use JIRA with PostgreSQL, you may want to use his project. <br>
 
 If you want to use JIRA with MariaDB use the following project.
 ![JIRA with MariaDB](https://github.com/eduardevops/dockerized-jira8.3-mariadb)
-------
+
 
 #### First things first
 Before you can use this repo make sure you have [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/install/) installed
@@ -32,9 +36,6 @@ into /etc/nginx/nginx.conf
 ```
 
 ------
-#### Versions
-*	JIRA v8.3.1
-*	MySQL 5.7.27
 
 #### Content Tree
 

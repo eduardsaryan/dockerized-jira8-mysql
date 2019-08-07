@@ -13,6 +13,7 @@ If you want to use JIRA with MariaDB use the following project.
 ##### Components Versions
 *	JIRA v8.3.1
 *	MySQL 5.7.27
+
 -----
 
 #### First things first

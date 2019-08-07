@@ -2,11 +2,11 @@
 
 <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/eduardevops/jira8.3-mysql.svg" style="max-width:100%;"> <img alt="MicroBadger Size" src="https://img.shields.io/microbadger/image-size/eduardevops/jira8.3-mysql/latest.svg" style="max-width:100%;">
 -----
-![Logo](./assets/logo.jpg)
+[Logo](./assets/logo.jpg)
 ------
 This is a fork of  ![This Project](https://github.com/cptactionhank/docker-atlassian-jira) <br>
-If you want to use JIRA with PostgreSQL, you may want to use his project <br>
-![Martin Aksel Jensen](https://github.com/cptactionhank) did a great job. <br>
+If you want to use JIRA with PostgreSQL, you may want to use his project
+[Martin Aksel Jensen](https://github.com/cptactionhank) did a great job. <br>
 
 If you want to use JIRA with MariaDB use the following project.
 ![JIRA with MariaDB](https://github.com/eduardevops/dockerized-jira8.3-mariadb)

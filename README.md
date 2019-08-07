@@ -20,7 +20,7 @@ If you want to use JIRA with MariaDB use the following project.
 Before you can use this repo make sure you have [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/install/) installed
 
 #### ToDo
-All names and parameters can be, and in most cases should be edited.
+All names and parameters can be, and in most cases, should be edited.
 
 
 ##### NGINX

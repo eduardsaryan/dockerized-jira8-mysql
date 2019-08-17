@@ -11,7 +11,7 @@ If you want to use JIRA with MariaDB use the following project.
 ![JIRA with MariaDB](https://github.com/eduardevops/dockerized-jira8.3-mariadb)
 
 ##### Components Versions
-*	JIRA v8.3.1
+*	JIRA v8.3.2
 *	MySQL 5.7.27
 -----
 #### First things first

@@ -65,4 +65,3 @@ Check logs in real-time
 ```less
 docker-compose logs -f
 ```
------

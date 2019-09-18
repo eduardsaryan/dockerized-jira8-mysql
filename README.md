@@ -1,6 +1,4 @@
-<!-- ## Dockerized JIRA v8.3 and MySQL v5.7 -->
-
-<img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/eduardevops/jira8.3-mysql.svg" style="max-width:100%;"> <img alt="MicroBadger Size" src="https://img.shields.io/microbadger/image-size/eduardevops/jira8.3-mysql/latest.svg" style="max-width:100%;">
+<img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/eduardevops/jira8.4-mysql.svg" style="max-width:100%;"> <img alt="MicroBadger Size" src="https://img.shields.io/microbadger/image-size/eduardevops/jira8.4-mysql/latest.svg" style="max-width:100%;">
 -----
 ![Logo](./assets/logo.jpg)
 
@@ -8,10 +6,10 @@ This is a fork of  ![This Project](https://github.com/cptactionhank/docker-atlas
 If you want to use JIRA with PostgreSQL, you may want to use his project. <br>
 
 If you want to use JIRA with MariaDB use the following project.
-![JIRA with MariaDB](https://github.com/eduardevops/dockerized-jira8.3-mariadb)
+![JIRA with MariaDB](https://github.com/eduardevops/dockerized-jira8.4-mariadb)
 
 ##### Components Versions
-*	JIRA v8.3.2
+*	JIRA v8.4.1
 *	MySQL 5.7.27
 -----
 #### First things first
@@ -49,12 +47,12 @@ To avoid it make sure to increase timeout settings in your webserver
 ##### HowTo
 Clone repo to your server (I would suggest use /opt directory)
 ```less
-sudo git clone https://github.com/eduardevops/dockerized-jira8.3-mysql.git
+sudo git clone https://github.com/eduardevops/dockerized-jira8.4-mysql.git
 ```
 Navigate to the project folder
 
 ```less
-cd /path/to/dockerized-jira8.3-mysql
+cd /path/to/dockerized-jira8.4-mysql
 ```
 Make docker-entrypoint.sh file executable for other and run the composer
 
@@ -68,6 +66,3 @@ Check logs in real-time
 docker-compose logs -f
 ```
 -----
-
-# Contact
-As the description is not complete yet, it may be confusing. So in case of any questions you may write to me <eduard.saryan@protonmail.com>

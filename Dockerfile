@@ -3,7 +3,7 @@ FROM openjdk:8-alpine
 # Configuration variables.
 ENV JIRA_HOME     /var/atlassian/jira
 ENV JIRA_INSTALL  /opt/atlassian/jira
-ENV JIRA_VERSION  8.3.2
+ENV JIRA_VERSION  8.4.1
 ENV MYSQL_CONNECTOR 5.1.48
 
 # Install Atlassian JIRA and helper tools and setup initial home

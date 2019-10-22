@@ -1,4 +1,4 @@
-<img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/eduardevops/jira8.4-mysql.svg" style="max-width:100%;"> <img alt="MicroBadger Size" src="https://img.shields.io/microbadger/image-size/eduardevops/jira8.4-mysql/latest.svg" style="max-width:100%;"> <a href="https://www.gnu.org/licenses/gpl-3.0/"> <img alt="Licenses" src="https://img.shields.io/badge/License-GPLv3-blue.svg" style="max-width:100%;"> </a>
+<img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/eduardevops/jira8-mysql.svg" style="max-width:100%;"> <img alt="MicroBadger Size" src="https://img.shields.io/microbadger/image-size/eduardevops/jira8-mysql/latest.svg" style="max-width:100%;"> <a href="https://www.gnu.org/licenses/gpl-3.0/"> <img alt="Licenses" src="https://img.shields.io/badge/License-GPLv3-blue.svg" style="max-width:100%;"> </a>
 -----
 ![Logo](./assets/logo.jpg)
 
@@ -9,7 +9,7 @@ For JIRA with MariaDB use the following project.
 ![JIRA with MariaDB](https://github.com/eduardevops/dockerized-jira8.5-mariadb)
 
 ##### Components Versions
-*	JIRA v8.4.1
+*	JIRA v8.5.0
 *	MySQL 5.7.27
 -----
 #### First things first
@@ -47,12 +47,12 @@ To avoid it make sure to increase timeout settings in your webserver
 ##### HowTo
 Clone repo to your server (I would suggest use /opt directory)
 ```less
-sudo git clone https://github.com/eduardevops/dockerized-jira8.4-mysql.git
+sudo git clone https://github.com/eduardevops/dockerized-jira8-mysql.git
 ```
 Navigate to the project folder
 
 ```less
-cd /path/to/dockerized-jira8.4-mysql
+cd /path/to/dockerized-jira8-mysql
 ```
 Make docker-entrypoint.sh file executable for other and run the composer
 

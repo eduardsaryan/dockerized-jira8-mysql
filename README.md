@@ -4,13 +4,12 @@
 
 ![Logo](./assets/logo.jpg)
 
-This is a fork of  ![This Project](https://github.com/cptactionhank/docker-atlassian-jira). <br>
-If you want to use JIRA with PostgreSQL, you may want to use his project. <br>
+This is a fork of ![Martin Aksel Jensen's](https://github.com/cptactionhank) project ![docker-atlassian-jira](https://github.com/cptactionhank/docker-atlassian-jira)  <br>
+You may use his project if you prefer PostgreSQL.
 
-For JIRA with MariaDB use the following project.
-![JIRA with MariaDB](https://github.com/eduardevops/dockerized-jira8.5-mariadb)
+For JIRA with MariaDB use the following project ![JIRA with MariaDB](https://github.com/eduardevops/dockerized-jira8-mariadb)
 
-##### Components Versions
+#####  Versions
 *	JIRA v8.5.0
 *	MySQL 5.7.27
 -----

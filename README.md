@@ -70,7 +70,7 @@ Navigate to the project folder
 ```less
 cd /path/to/dockerized-jira8-mysql
 ```
-Make docker-entrypoint.sh file executable for ``` 'other' ``` and run the composer
+Make docker-entrypoint.sh file executable for ```other``` and run the composer
 
 ```less
 chmod o+x docker-entrypoint.sh

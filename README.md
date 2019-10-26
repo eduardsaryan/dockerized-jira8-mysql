@@ -17,11 +17,15 @@ For JIRA with MariaDB use the following project ![JIRA with MariaDB](https://git
 Before you can use this repo make sure you have [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/install/) installed
 
 #### ToDo
-All names and parameters can be, and in most cases, should be edited.
+All names can be, and, in most cases, should be changed.
 
 #### Timeout
-Depending on your server sepcs JIRA configuration (and its work in general) can be very slow, which can cause timeout issue with your web server or even with JIRA without reverse proxy (e.g. error 504, nginx).
-To avoid it make sure to increase timeout settings in your webserver
+JIRA is a resource consuming system, regardless you use it inside docker or installed directly in the server.
+In .env.jira file you can set MIN and MAX memory usage thresholds, however I would recommend to have at least 4GB memory.
+Otherwise it may crash occasionally.
+But even with above mentioned parameters you may face error 504 (time out) message, if you choose using Nginx as a reverse proxy.
+To avoid it make sure to increase timeout settings in your webserver (Nginx or Apache).
+
 
 ------
 #### Content Tree

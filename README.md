@@ -10,9 +10,11 @@
 * [Versions](#Versions)
 * [Build With](#Build-With)
 * [Project Tree](#Project-Tree)
+* [Config Folder](#Config-Folder)
 * [Rename](#Rename)
 * [Timeout](#Timeout)
 * [How To Use](#How-To-Use)
+
 
 This is a fork of ![Martin Aksel Jensen's](https://github.com/cptactionhank) project ![docker-atlassian-jira](https://github.com/cptactionhank/docker-atlassian-jira)  <br>
 You may use his project if you prefer PostgreSQL.
@@ -47,6 +49,13 @@ For JIRA with MariaDB use the following project ![JIRA with MariaDB](https://git
 ├── docker-compose.yml
 └── docker-entrypoint.sh
 ```
+
+### Config Folder
+| File                        | Description                                                                                   |
+| :-------------------------- |:--------------------------------------------------------------------------------------------- |
+| apache-reverse-proxy.conf   | Basic reverse proxy config file for apache (With Letsencrypt certificates)                    |
+| nginx-reverse-proxy.conf    | Basic reverse proxy config file for nginx  (With Letsencrypt certificates)                    |
+| httpd.conf                  | Apache conf with slight change, just to avoid "Could not reliably determine ..." message      |
 
 #### Rename
 All names can be, and, in most cases, should be changed.

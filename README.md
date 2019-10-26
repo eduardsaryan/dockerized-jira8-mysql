@@ -50,7 +50,7 @@ For JIRA with MariaDB use the following project ![JIRA with MariaDB](https://git
 └── docker-entrypoint.sh
 ```
 
-### Config Folder
+#### Config Folder
 | File                        | Description                                                                                   |
 | :-------------------------- |:--------------------------------------------------------------------------------------------- |
 | apache-reverse-proxy.conf   | Basic reverse proxy config file for apache (With Letsencrypt certificates)                    |

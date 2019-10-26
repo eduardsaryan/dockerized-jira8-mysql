@@ -57,6 +57,7 @@ In .env.jira file you can set MIN and MAX memory usage thresholds, however I wou
 Otherwise it may crash occasionally.
 But even with above mentioned parameters you may face error 504 (time out) message, if you choose using Nginx as a reverse proxy.
 To avoid it make sure to increase timeout settings in your webserver (Nginx or Apache).
+
 -----
 
 #### HowTo

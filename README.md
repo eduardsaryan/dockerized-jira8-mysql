@@ -1,4 +1,4 @@
-## Run JIRA with MariaDB inside Docker container
+## Run JIRA with MySQL inside Docker container
 
 ![Logo](./assets/logo.jpg)
 

@@ -21,7 +21,7 @@ You may use his project if you prefer PostgreSQL.
 For JIRA with MariaDB use the following project ![JIRA with MariaDB](https://github.com/eduardevops/dockerized-jira8-mariadb)
 
 ####  Versions
-*	JIRA v8.6.0
+*	JIRA v8.6.1
 *	MySQL 5.7.28
 
 #### Build With

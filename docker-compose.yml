@@ -1,4 +1,5 @@
 version: '3'
+
 services:
   jira-web:
     restart: always

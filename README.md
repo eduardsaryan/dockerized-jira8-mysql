@@ -1,4 +1,4 @@
-### Run JIRA with MySQL inside Docker container
+### Dockerized Jira with MySQL
 
 ![Logo](./assets/logo.jpg)
 

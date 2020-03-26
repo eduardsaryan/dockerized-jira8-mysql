@@ -11,4 +11,4 @@ now=$(date +"%d.%b.%Y"-"%H:%M")
 # Backup exported files
 docker cp jira-web:/var/atlassian/jira/export/. /backup/jira-exported/
 # Delete files older than 3 days
-find /backup/jira/ -type f -iname '*.zip' -mtime +2 -exec rm {} \;
+find /backup/jira/ -type f -iname '*.zip' -mtime +3 -exec rm {} \;

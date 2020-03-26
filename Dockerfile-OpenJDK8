@@ -1,18 +1,4 @@
-# Defining base image
-FROM alpine:latest
-
-# Install OpenJDK 11.x
-
-# Default to UTF-8 encoding
-ENV LANG C.UTF-8
-
-# Configuration variables for OpenJDK
-ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk/jre
-ENV PATH $PATH:/usr/lib/jvm/java-11-openjdk/jre/bin:/usr/lib/jvm/java-11-openjdk/bin
-
-# Install Java
-RUN set -x \
-	  && apk --no-cache add openjdk11 --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
+FROM openjdk:8-alpine
 
 # Configuration variables.
 ENV JIRA_HOME     /var/atlassian/jira

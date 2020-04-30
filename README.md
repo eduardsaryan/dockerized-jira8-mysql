@@ -1,4 +1,4 @@
-## Dockerized Jira with MySQL
+### Dockerized Jira with MySQL
 
 ![Logo](./assets/logo.jpg)
 
@@ -52,14 +52,13 @@ For Jira with PostgreSQL use the following project ![Jira with PostgreSQL](https
 | db_restore.sh  | Small script to restore dockerized database                                                        |
 | jira_backup.sh | Small script to copy Jira exported XML files and remove files older then 3 days                    |
 
-
 ### Rename
-All names can be, and, in most cases, should be changed.
+All names can be, moreover, in most cases, should be changed.
 
 -----
 
 ### Deployment
-Clone repo to your server (I would suggest use /opt directory)
+Clone repo to your server. I suggest using ```/opt``` directory
 ```less
 sudo git clone https://github.com/eduardevops/dockerized-jira8-mysql.git
 ```

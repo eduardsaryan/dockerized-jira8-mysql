@@ -43,10 +43,10 @@ For Jira with PostgreSQL use the following project ![Jira with PostgreSQL](https
 | :-------------------------- |:------------------------------------------------------------------------------------- |
 | db_backup.sh   | Small script to backup dockerized database                                                         |
 | db_restore.sh  | Small script to restore dockerized database                                                        |
-| jira_backup.sh | Small script to copy Jira exported XML files and remove files older then 3 days                    |
+| jira_backup.sh | Small script to copy Jira exported XML files and remove files older than 3 days                    |
 
 ### Rename
-All names can be, moreover, in most cases, should be changed.
+It is highy advised to change all names.
 
 -----
 

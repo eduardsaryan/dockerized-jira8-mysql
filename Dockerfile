@@ -15,9 +15,9 @@ RUN set -x \
 	  && apk --no-cache add openjdk11 --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
 
 # Configuration variables.
-ENV JIRA_HOME     /var/atlassian/jira
-ENV JIRA_INSTALL  /opt/atlassian/jira
-ENV JIRA_VERSION   8.8.1
+ENV JIRA_HOME       /var/atlassian/jira
+ENV JIRA_INSTALL    /opt/atlassian/jira
+ENV JIRA_VERSION    8.9.1
 ENV MYSQL_CONNECTOR 5.1.48
 
 # Install Atlassian JIRA and helper tools and setup initial home

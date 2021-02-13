@@ -5,15 +5,15 @@
 ### Status
 <img alt="Image Size" src="https://img.shields.io/docker/image-size/eduardsaryan/jira8-mysql" style="max-width:100%;"> <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/eduardsaryan/jira8-mysql" style="max-width:100%;"> <img alt="Build Status" src="https://img.shields.io/docker/cloud/build/eduardsaryan/jira8-mysql" style="max-width:100%;"> <img alt="Licenses" src="https://img.shields.io/badge/License-GPLv3-blue.svg" style="max-width:100%;">
 
+For Jira with MySQL use the following project [Jira with MySQL](https://github.com/eduardsaryan/dockerized-jira8-mysql) <br>
+For Jira with MariaDB use the following project [Jira with MariaDB](https://github.com/eduardsaryan/dockerized-jira8-mariadb)
+
 ### Table of contents
 * [Prerequisites](#Prerequisites)
 * [Project Tree](#Project-Tree)
 * [Backup Folder](#Backup-Folder)
 * [Rename](#Rename)
 * [Deployment](#Deployment)
-
-For Jira with MariaDB use the following project [Jira with MariaDB](https://github.com/eduardsaryan/dockerized-jira8-mariadb) <br>
-For Jira with PostgreSQL use the following project [Jira with PostgreSQL](https://github.com/eduardsaryan/dockerized-jira8-postgresql)
 
 ### Prerequisites
 *	[Docker](https://www.docker.com/)

@@ -24,7 +24,7 @@ services:
     env_file:
       - .env.db
     volumes:
-        - /var/lib/mysql
+        - db:/var/lib/mysql
     command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_bin']
 volumes:
     web:
